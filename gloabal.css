@@ -1,0 +1,162 @@
+/* Global Styles
+-------------------------- */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    /* text-align: center; */
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    color: #FFE66D;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h3 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+h3+p {
+    font-style: italic;
+}
+
+h3~p {
+    margin: 0;
+}
+
+.divider>div {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.divider>div:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile
+-------------------------- */
+header {
+    background: #2F3061;
+    color: #f7fff7;
+}
+
+/* Education
+-------------------------- */
+.education {
+    background-image: url("../Portfolio/images/joanna-kosinska-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+}
+
+/* Internship
+-------------------------- */
+.internship {
+    background: #A1C6D7;
+}
+
+/* Projects
+-------------------------- */
+.projects {
+    background: #f7fff7;
+}
+
+/* Contact Info
+-------------------------- */
+footer {
+    background: #343434;
+    color: #f7fff7;
+}
+
+.contact-list {
+    padding: 0;
+    list-style-type: none;
+    /* background-color: wheat; */
+}
+
+.contact-list li {
+    padding: 15px;
+    color: #FFE66D;
+}
+
+.contact-list a {
+    padding: 15px;
+}
+
+/* Responsive Design
+-------------------------- */
+@media screen and (min-width:750px){
+    header,footer{
+        text-align: center;
+    }
+    .w-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1 {
+        font-size: 75px;
+        line-height: 1;
+        /* text-align: center; */
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+    .contact-list li {
+        padding: 5px;
+        width: 100%;
+    }
+    .education p{
+        width: 60%;
+    }
+}
